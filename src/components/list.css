@@ -1,0 +1,11 @@
+.over{
+  overflow-x: scroll;
+  overflow-y: visible;
+  
+ 
+  
+  
+}
+.example::-webkit-scrollbar {
+  display: none;
+}

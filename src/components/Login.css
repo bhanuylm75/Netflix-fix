@@ -1,0 +1,45 @@
+.bg{
+  min-height: 100vh;
+}
+.img1{
+  
+  color: rgb(229,9,20);
+  z-index: 1;
+  position: absolute;
+  
+
+  
+  
+}
+
+.in{
+  background-color: brown;
+}
+.img2{
+  
+ 
+  height: 100vh;
+  width: 100%;
+  
+}
+.formcon{
+  
+  background-color: blue;
+  z-index: 2;
+}
+.con{
+  background: rgb(0 0 0 / 40%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ 
+  position: absolute;
+ 
+ 
+  
+  
+ 
+
+}
+
