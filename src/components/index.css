@@ -2,14 +2,8 @@
   width: 120px;
   
   position: relative;
-  transition: transform 500ms;
   
 
 
 
-}
-.card:hover {
-  transform: scaleX(2); 
-  z-index: 10;
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

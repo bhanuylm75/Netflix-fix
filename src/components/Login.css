@@ -1,5 +1,5 @@
 .bg{
-  min-height: 100vh;
+  height: 100vh;
 }
 .img1{
   
@@ -7,7 +7,6 @@
   z-index: 1;
   position: absolute;
   
-
   
   
 }
@@ -36,10 +35,20 @@
  
   position: absolute;
  
- 
   
   
  
 
+}
+@media only screen and (max-width: 600px) {
+  .mobile{
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 10px;
+    left: 0;
+    margin-top: 40%;
+   
+    
+  }
 }
 

@@ -5,10 +5,10 @@ const Secondcon = () => {
   const movies = useSelector((store) => store.movies);
   console.log(movies)
   return (
-    <div className='bg-black -mt-52'>
+    <div className=" px-0 md:-mt-44 px-6 bg-black">
       <div className="">
       <Movieslist  title={"Now Playing"} movies={movies.nowPlayingMovies}/>
-      <Movieslist title={"Now Playing"} movies={movies.nowPlayingMovies}/>
+      <Movieslist title={"Now Playing"} movies={movies.popularMovies}/>
       <Movieslist title={"Now Playing"} movies={movies.nowPlayingMovies}/>
       <Movieslist title={"Now Playing"} movies={movies.nowPlayingMovies}/>
       <Movieslist title={"Now Playing"} movies={movies.nowPlayingMovies}/>

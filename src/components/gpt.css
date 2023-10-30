@@ -1,0 +1,20 @@
+.bg{
+  background-color: black;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.over{
+  overflow-x: scroll;
+  overflow-y: visible;
+  
+ 
+  
+  
+}
+.example::-webkit-scrollbar {
+  display: none;
+}

@@ -1,11 +1,12 @@
 import React from 'react'
 import Moviecard from './Moviecard'
 import "./list.css"
+//import { Link } from 'react-router-dom'
 
 const Movieslist = ({title,movies}) => {
   //console.log(movies)
   return (
-    <div className="px-6 ">
+    <div className="px-6  sm:px-0  ">
       <h1 className="text-lg md:text-3xl py-4 text-white">{title}</h1>
       <div className="flex over example">
         <div className="flex">

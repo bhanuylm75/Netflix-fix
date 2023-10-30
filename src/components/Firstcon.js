@@ -9,10 +9,11 @@ const Firstcon = () => {
 
   const mainMovie = movies[0];
 
-  const {  id } = mainMovie
+  const {  id ,title,overview} = mainMovie
+  console.log(title,overview)
   return (
     <div className='h-full'>
-      <Desc/>
+      <Desc desc={overview}  title={title}className=""/>
       < Background id={id}/>
     </div>
   )

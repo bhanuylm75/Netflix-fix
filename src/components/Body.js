@@ -1,6 +1,7 @@
 import React from 'react'
 import Login from './Login'
 import Browser from './Browser'
+import List from './List'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 
 const Body = () => {
@@ -11,7 +12,13 @@ const Body = () => {
     },
     {
       path:"/browser",
-      element:<Browser/>
+      element:<Browser/>,
+      
+    },
+    {
+      path:"/list",
+      element:<List/>,
+      
     },
   ])
   return (

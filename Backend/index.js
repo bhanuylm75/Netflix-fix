@@ -27,8 +27,13 @@ app.post("/signin",async (req,res)=>{
   console.log(req.body.email)
   try{
     if(!signinuser){
-      res.send("usr not found")
+      res.send("user not found")
       return
+    }
+    if (req.body?.password !== signinuser?.password){
+      res.send('Incorrect Password')
+      return
+  
     }
     if (req.body?.password === signinuser?.password){
       res.send(signinuser)
@@ -42,6 +47,6 @@ app.post("/signin",async (req,res)=>{
   }
 })
 
-app.listen(3005,()=>{
-  console.log("Runing")
+app.listen(3007,()=>{
+  console.log("Running")
 })
