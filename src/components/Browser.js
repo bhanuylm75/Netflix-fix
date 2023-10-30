@@ -24,7 +24,7 @@ const Browser = () => {
     
     
 
-  },[])
+  },[user])
   const getnowplayingmovies = async () => {
     const {data }= await axios.get(
       "https://api.themoviedb.org/3/movie/now_playing?page=1",

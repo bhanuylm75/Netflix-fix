@@ -1,13 +1,17 @@
 import React from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import {toggleGptSearchView} from "./gptslice"
+import { adduser } from './Userslice';
 
 const Header = () => {
   const showGptSearch = useSelector((store) => store.gptslice.showGptSearch);
-  console.log(showGptSearch)
+  //const user=useSelector((store) => store.userslice)
   const dispatch = useDispatch();
+  const onsignout=()=>{
+    dispatch(adduser(null))
+  }
+  
   const handleGptSearchClick = () => {
-    // Toggle GPT Search
     dispatch(toggleGptSearchView());
   };
   return (
@@ -21,7 +25,7 @@ const Header = () => {
           >
             {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
-       <button  className="p-1 md:py-2 px-4 mx-4 my-2 bg-red-800 text-white rounded-lg ">
+       <button onClick={onsignout}  className="p-1 md:py-2 px-4 mx-4 my-2 bg-red-800 text-white rounded-lg ">
             Sign Out
           </button>
        </div>

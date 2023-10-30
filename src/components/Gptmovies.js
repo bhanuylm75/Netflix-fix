@@ -10,7 +10,7 @@ const Gptmovies = () => {
   console.log(movieNames,movieResults)
   //if (isloading  ) return <Loading/> ;
   return (
-    <div className="   text-white md:m-8">
+    <div className=" bg-black h-max  text-white md:p-8">
     <div>
       {movieNames?.map((movieName, index) => (
         <Movieslist
